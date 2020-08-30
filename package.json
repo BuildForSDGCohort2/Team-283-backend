@@ -26,6 +26,7 @@
     "express-swagger-generator": "^1.1.17",
     "nodemon": "^2.0.4",
     "pg": "^8.3.3",
+    "pg-hstore": "^2.3.3",
     "sequelize": "^6.3.4"
   }
 }
