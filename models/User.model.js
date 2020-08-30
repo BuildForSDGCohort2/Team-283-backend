@@ -6,11 +6,16 @@ const {
 const sequelize = require("../utils/database.connection");
 
 const User = sequelize.define('User', {
+    userId: {
+        type: DataTypes.UUID,
+        defaultValue: Sequelize.UUIDV4,
+        primaryKey: true
+    },
     msisdn: {
-        DataTypes.STRING
+        type: DataTypes.STRING
     },
     email: {
-        DataTypes.STRING
+        type: DataTypes.STRING
     },
     firstName: DataTypes.STRING,
     lastName: DataTypes.STRING,

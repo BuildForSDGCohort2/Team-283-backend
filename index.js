@@ -4,6 +4,7 @@ const cors = require('cors');
 const app = express();
 
 const routes = require("./routes");
+const { User } = require("./controllers/User.controller");
 
 const expressSwagger = require('express-swagger-generator')(app);
 
